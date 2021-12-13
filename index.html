@@ -67,18 +67,20 @@
             
             <li class="nav-item" data-level="1"><a href="#welcome-to-mydocs" class="nav-link">Welcome to MyDocs</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#english-blogs" class="nav-link">English Blogs</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#english-blogs" class="nav-link">English Blogs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#markdown-documentation-and-publish-tools-usage-tips" class="nav-link">Markdown documentation and publish tools &amp; usage tips</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#documentating-tools-mkdocs-usage-tips" class="nav-link">Documentating tools &amp; MkDocs usage tips</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">中文笔记</a>
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">中文笔记</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -87,16 +89,15 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-mydocs">Welcome to MyDocs</h1>
-<p>This site hosts some of my blogs bothn in Egnlish and Chinese. </p>
-<p>This document is generatd by MkDocs, for full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="english-blogs">English Blogs</h2>
-<h2 id="documentating-tools-mkdocs-usage-tips">Documentating tools &amp; MkDocs usage tips</h2>
-<p>14:10 Monday, December 13, 2021 
-I have been searching a lightweith, scablable and easy-to-use documentation method for around half a year
-since I finished my 100+ page-dissertation and wrote many other personal notes using Microsft Word. Previously, I mainly used Word, OneNote, Notion to write notes, organize personal plans and projects. These tools works quite well for me at the beginning, but after I accumulated more data and records (e.g. seveal documents with 1000+ pages), they begin to struggle with performance and scability. I relize it is time to find an alternative. </p>
-<p>Initially, I tried to write Markdown(md) documents,which are quite light-weith. But they are not very appealing to me at the beginning, since I miss some key features like table of cotents, navigation structures offered by what-you-see-is-what-you-get applications(e.g. Microsoft Word). But later on, when I browsed many extensive long structured documents and manuals wrote in Markdown for open source projects, I reallize it would be a good solution to my problem too. These documents can either be hosted on-line in Github or coverted to locally browserale chm files.    </p>
-<p>Then I started to learn these enabling tools for such documentation. I soon gave up sphinx after finding that MkDocs has the same functionality with more simpler Markdown syntax and easier configuration. </p>
-<h3 id="publish-on-github-repository">Publish on Github repository</h3>
+<p>This site hosts some of my blogs written both in Egnlish and Chinese. </p>
+<p>This document is written in markdown and curated by MkDocs, for full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h1 id="english-blogs">English Blogs</h1>
+<h2 id="markdown-documentation-and-publish-tools-usage-tips">Markdown documentation and publish tools &amp; usage tips</h2>
+<p>14:10 Monday, December 13, 2021</p>
+<p>I have been searching a lightweith, scablable and easy-to-use documentation method for around half a year since I finished my 150+ page-dissertation and wrote many other personal notes using Microsft Word. Previously, I searched and tried a few notetaking tools such as Roam, WorkFlowy, Evernote which didn't work out quite well for me. In fact, I sticked with Word and picked up OneNote, Notion, TheBrain to write notes, organize personal plans and projects. These tools works quite well for me at the beginning, but after I accumulated more data and records (e.g. seveal documents with 1000+ pages), Word and Notion begin to struggle with performance and scability issues. I relize it is time to find an alternative. </p>
+<p>Initially, I tried to write Markdown(md) documents, which are quite light-weight. But they are not very appealing to me, because I miss some key features like table of cotents, navigation structures offered by what-you-see-is-what-you-get applications(e.g. Microsoft Word). Nonetheless, later on, when I browsed many extensive long structured documents and manuals written in md for open source projects, I reallize it would be a good solution to my problem too. These documents can either be hosted on-line in Github or coverted to locally browserale chm files.    </p>
+<p>So I fall back on md and start to learn these enabling tools for md documentation. At this moment, I am experimenting with some tools and trying to set up efficient workflows. For local documentation, I now decide to pick up <a href="https://obsidian.md/">Obsidian</a> which I abodoned before. For on-line publication, I firstly try to use <a href="https://www.sphinx-doc.org/en/master/">sphinx</a> and soon give it up  after finding that <a href="https://www.mkdocs.org">MkDocs</a>has the same functionality with more simpler md syntax and easier configuration. In the following sections, I will share the most useful tips and workflows I have used so far. </p>
+<h3 id="publish-on-github-repository-with-mkdocs">Publish on Github repository with MkDocs</h3>
 <p>With MkDocs, all the md documents can be viewed locally on your browser. More attractively, they can be easily pushed to your Github repository and to be viewly publicly on a website as manuals or blogs as well. These features are really fantastic!</p>
 <p>To fully benefit from this feature,  firstly create a repositrory on your github account and clone it into your local computer. Starting from the local folder magic can happen soon, and you just execute the following commands or follow the instructions from <a href="https://www.mkdocs.org/getting-started/">mkdocs.org</a>:</p>
 <pre><code>* `mkdocs new .` - Create a new project.
@@ -104,7 +105,14 @@ since I finished my 100+ page-dissertation and wrote many other personal notes u
 * `mkdocs build` - Build the documentation site.
 * `mkdocs gh-deploy` - upload your local documents to your remote repository on github and publish there. 
 </code></pre>
-<h2 id="_1">中文笔记</h2></div>
+<h3 id="pipelies-to-update-and-publish-the-document">Pipelies to update and publish the document</h3>
+<p>TODOs: add more instructions on how the workflow is like. </p>
+<h3 id="local-documentation-with-obsidian">Local documentation with Obsidian</h3>
+<p>TODOs: add more instructions on how obsidian works. </p>
+<p><a href="https://www.youtube.com/watch?v=Ewhfok91AdE">obsidian workflow</a></p>
+<p>the link [[]]</p>
+<p>the tag #tools</p>
+<h1 id="_1">中文笔记</h1></div>
             </div>
         </div>
 
@@ -188,5 +196,5 @@ since I finished my 100+ page-dissertation and wrote many other personal notes u
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-12-13 13:12:47.291974+00:00
+Build Date UTC : 2021-12-13 15:52:05.595439+00:00
 -->
