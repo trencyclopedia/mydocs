@@ -1,97 +1,152 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
-  
-  
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>My Docs</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Home";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-  <div class="wy-grid-for-nav">
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">English Blogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="English%20Blogs/Customization/Appearance/" class="dropdown-item">Appearance</a>
+</li>
+                                    
+<li>
+    <a href="English%20Blogs/Customization/Custom%20hotkeys/" class="dropdown-item">Hotkeys</a>
+</li>
+                                    
+<li>
+    <a href="English%20Blogs/How%20to/Add%20aliases%20to%20note/" class="dropdown-item">howto</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">中文笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/" class="dropdown-item">博客</a>
+</li>
+                                    
+<li>
+    <a href="%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/" class="dropdown-item">读书摘要</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> My Docs</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="English%20Blogs/Customization/Appearance/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="" href="about.md">About</a>
-                    </li>
-                </ul>
-      </div>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">My Docs</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
     
-      
-    
-    <li>Home</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="welcome-to-mydocs">Welcome to MyDocs</h1>
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#welcome-to-mydocs" class="nav-link">Welcome to MyDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#english-blogs" class="nav-link">English Blogs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#markdown-documentation-publish-tools-workflows" class="nav-link">Markdown documentation, publish tools &amp; workflows</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="3"><a href="#markdown-vs-restructuredtext" class="nav-link">Markdown vs reStructuredTExt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#publish-md-documents-on-github-repository-using-mkdocs" class="nav-link">Publish md documents on Github repository using MkDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#local-documentation-with-obsidian" class="nav-link">Local documentation with Obsidian</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#publish-md-documents-on-github-repository-using-jekyll" class="nav-link">Publish md documents on Github repository using Jekyll</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#publish-restructuredtext-on-github-repository-with-sphinx" class="nav-link">Publish reStructuredText on Github repository with Sphinx</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#pipelies-to-update-and-publish-the-document" class="nav-link">Pipelies to update and publish the document</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="welcome-to-mydocs">Welcome to MyDocs</h1>
 <p>This site hosts some of my blogs written both in Egnlish and Chinese. </p>
 <p>This document is written in markdown and curated by MkDocs, for full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
 <h1 id="english-blogs">English Blogs</h1>
@@ -109,14 +164,23 @@
 <li><a href="https://gist.github.com/dupuy/1855764">Markdown and reStructuredText</a></li>
 </ul>
 <h3 id="publish-md-documents-on-github-repository-using-mkdocs">Publish md documents on Github repository using MkDocs</h3>
-<p>With MkDocs, all the md documents can be viewed locally on your browser. More attractively, they can be easily pushed to your Github repository and to be viewly publicly on a website as manuals or blogs as well. These features are really fantastic!</p>
+<p>With MkDocs, all the md documents can be viewed locally on your browser. More attractively, they can be easily pushed to your Github repository and to be viewly publicly on a website as manuals or blogs as well. Actually all the contents of this website are initially witten in md, and then converted to HTML by MkDocs. How handy and fantastic it is!</p>
 <p>To fully benefit from this feature,  firstly create a repositrory on your github account and clone it into your local computer. Starting from the local folder magic can happen soon, and you just execute the following commands or follow the instructions from <a href="https://www.mkdocs.org/getting-started/">mkdocs.org</a>:</p>
 <pre><code>* `mkdocs new .` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server, and view it at http://127.0.0.1:8000/ in your browser
 * `mkdocs build` - Build the documentation site.
 * `mkdocs gh-deploy` - upload your local documents to your remote repository on github and publish there. 
 </code></pre>
-<p>As one of the drawbacks with md documents metntioned in the linked post, it is not handy to generate a hierarchial table of contents especially when you have an extensive long document. </p>
+<p>As one of the drawbacks of md documents compared with reStructureText, it is not handy to generate a hierarchial table of contents especially when you have extensive documents. The way to generate a table of content (TOC) is not uniformly specified in the syntax, so it is often problematic when you switch between md processing applications.</p>
+<p>Though in MkDocs, there is a way to customize your website/file structure by <a href="https://www.mkdocs.org/user-guide/writing-your-docs/">edit the yml configuration file</a>, it would be very labourous if you have to adjust the structure of many different pages or sections by hand. </p>
+<p>In summary, MkDocs is a very convenienvet tool to deploy a simple website hosting limited number of pages. Nonetheless, if there is no automatic way to generate TOC, and it would be difficult to set up the hierarchial structure when you have a lot of md files. </p>
+<h3 id="local-documentation-with-obsidian">Local documentation with Obsidian</h3>
+<p>When work on md files localy, I use Obsidian to process and manage them. TOC has a direc reflect of your directory struture within one vault, which is a term/method used by Obsidian to curate an independent and standalone repository. This feature is pretty neat enough if you learn to use folder structure and naming appropriately. </p>
+<p>Two usefule tips:</p>
+<pre><code>- [[]] # internal link
+- #tools #  the tag
+</code></pre>
+<p>To learn more instructions on how to use obsidian, check out at <a href="https://www.youtube.com/watch?v=Ewhfok91AdE">obsidian workflow</a> . </p>
 <h3 id="publish-md-documents-on-github-repository-using-jekyll">Publish md documents on Github repository using Jekyll</h3>
 <p><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll">Github Docs</a></p>
 <h3 id="publish-restructuredtext-on-github-repository-with-sphinx">Publish reStructuredText on Github repository with Sphinx</h3>
@@ -126,56 +190,89 @@
 <ul>
 <li><a href="https://docs.readthedocs.io/en/stable/index.html">Read the Docs tutorial</a></li>
 <li><a href="https://readthedocs.org/">Read the Docs</a></li>
-</ul>
-<h3 id="local-documentation-with-obsidian">Local documentation with Obsidian</h3>
-<p>TODOs: add more instructions on how obsidian works. </p>
-<p><a href="https://www.youtube.com/watch?v=Ewhfok91AdE">obsidian workflow</a></p>
-<p>the link [[]]</p>
-<p>the tag #tools</p>
-<h1 id="_1">中文笔记</h1>
-              
+</ul></div>
             </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
-</body>
+    </body>
 </html>
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-12-13 20:36:13.608640+00:00
+Build Date UTC : 2021-12-14 10:42:27.740088+00:00
 -->

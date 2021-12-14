@@ -7,15 +7,15 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>My Docs</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>howto - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">My Docs</a>
+                <a class="navbar-brand" href="../../..">My Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -36,22 +36,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Home</a>
+                                <a href="../../.." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">English Blogs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/English%20Blogs/Customization/Appearance/" class="dropdown-item">Appearance</a>
+    <a href="../../Customization/Appearance/" class="dropdown-item">Appearance</a>
 </li>
                                     
 <li>
-    <a href="/English%20Blogs/Customization/Custom%20hotkeys/" class="dropdown-item">Hotkeys</a>
+    <a href="../../Customization/Custom%20hotkeys/" class="dropdown-item">Hotkeys</a>
 </li>
                                     
 <li>
-    <a href="/English%20Blogs/How%20to/Add%20aliases%20to%20note/" class="dropdown-item">howto</a>
+    <a href="./" class="dropdown-item active">howto</a>
 </li>
                                 </ul>
                             </li>
@@ -60,11 +60,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/" class="dropdown-item">博客</a>
+    <a href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/" class="dropdown-item">博客</a>
 </li>
                                     
 <li>
-    <a href="/%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/" class="dropdown-item">读书摘要</a>
+    <a href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/" class="dropdown-item">读书摘要</a>
 </li>
                                 </ul>
                             </li>
@@ -76,6 +76,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../Customization/Custom%20hotkeys/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -83,15 +93,54 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="3"><a href="#set-aliases" class="nav-link">Set aliases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="3"><a href="#link-with-aliases" class="nav-link">Link with aliases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="3"><a href="#find-unlinked-mentions" class="nav-link">Find unlinked mentions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<p>Sometimes, you might want to refer to the same file with multiple names in different contexts. These alternative names are what we call "aliases".</p>
+<p>For example, you might want to refer to your partner by their full name, first name, or a nickname. Or you might want to refer to "artificial intelligence" by its abbreviation "AI". If you know multiple languages, you may want to refer to the same concept with their name in the same language that the rest of the note is written in.</p>
+<h3 id="set-aliases">Set aliases</h3>
+<p>Starting in 0.9.16, you're able to specify the "aliases" property in a note's like so:</p>
+<pre><code>---
+aliases: [AI, Artificial Intelligence]
+---
+</code></pre>
+<p>Please note that this section must be placed at the very top of a note to take effect.</p>
+<p>In the future, we'll consider more user-friendly ways to manage aliases than manually writing them in front matter.</p>
+<h3 id="link-with-aliases">Link with aliases</h3>
+<p>Once you've set aliases for a file, you can write <code>[[alias]]</code> to link to the original page. A redirect icon will show up in the auto-complete list like so:</p>
+<p>An internal link with display text will get inserted like so: <code>[[Add aliases to note|alias]]</code>.</p>
+<p>Note: the link to alias is <strong>NOT</strong> inserted as <code>[[alias]]</code> for interoperability, so that other software can recognize it as well.</p>
+<h3 id="find-unlinked-mentions">Find unlinked mentions</h3>
+<p>After you've set aliases for a note, you can find unlinked mentions by both its name and its aliases.</p>
+<p>For example, after setting "AI" as an alias for "Artificial intelligence", you'll see mentions of "AI" in other files in the section.</p>
+<p>If you decide to link this mention, a link with display text set to the alias will be created for you. Following the example above, <code>AI</code> will become once you click on the "Link" button.</p></div>
             </div>
         </div>
 
@@ -100,11 +149,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
