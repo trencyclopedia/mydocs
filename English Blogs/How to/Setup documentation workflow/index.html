@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Setup documentation Workflow - My Docs</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Setup documentation Workflow";
+    var mkdocs_page_input_path = "English Blogs\\How to\\Setup documentation workflow.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Welcome to MyDocs</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../website/">website</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">English Blogs</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">How to</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Add%20aliases%20to%20note/">Add aliases to note</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Setup documentation Workflow</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#markdown-documentation-publish-tools-workflows">Markdown documentation, publish tools &amp; workflows</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#markdown-vs-restructuredtext">Markdown vs reStructuredTExt</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#markdown">Markdown</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#restructuredtext">reStructuredTExt</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#workflow-to-update-and-publish-docs">Workflow to update and publish docs</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Setup%20github%20workflow/">Setup github workflow</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Tech</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Tech/Digital%20healthcare/">Digital healthcare</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Tech/Quantified-self/">Quantified self</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">中文笔记</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/">读书笔记</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">写作</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/">中文笔记</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>How to &raquo;</li>
+        
+      
+        
+          <li>English Blogs &raquo;</li>
+        
+      
+    
+    <li>Setup documentation Workflow</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setup-documentation-workflow">Setup documentation Workflow</h1>
+<h2 id="markdown-documentation-publish-tools-workflows">Markdown documentation, publish tools &amp; workflows</h2>
+<hr />
+<p>14:10 Monday, December 13, 2021</p>
+<p>I have been searching a lightweith, scablable and easy-to-use documentation method for around half a year since I finished my 150+ page-dissertation and wrote many other personal notes using Microsft Word. Previously, I searched and tried a few notetaking tools such as Roam, WorkFlowy, Evernote which didn't work out quite well for me. In fact, I sticked with Word and picked up OneNote, Notion, TheBrain to write notes, organize personal plans and projects. These tools works quite well for me at the beginning, but after I accumulated more data and records (e.g. seveal documents with 1000+ pages), Word and Notion begin to struggle with performance and scability issues. Additionally, word files and formats usually can't be coverted into html files in a straitforwad way, so another headache creeps in when I think about disseminating part of these written materials in my personal website on-line. I relize it is time to find an alternative. </p>
+<p>Initially, I tried to write light-weight documents using Markdown(md). But they were not very appealing to me immediately, because I missed some key features like table of cotents, navigation structures offered by what-you-see-is-what-you-get applications(e.g. Microsoft Word). Nonetheless, later on, when I browsed many extensive long structured documents/manuals originally written in md for open source projects, I reallized it would be a good solution to my problem too. These documents could either be hosted on-line in Github or  viewed locally, and they can also be compiled as HTML files to read and share.    </p>
+<p>So I fall back on md and start to learn these enabling tools for md documentation. At this moment, I am experimenting with some tools and trying to set up efficient workflows. For local documentation, I now decide to pick up <a href="https://obsidian.md/">Obsidian</a> which I abodoned before. For on-line publication, I firstly try to use <a href="https://www.sphinx-doc.org/en/master/">sphinx</a> , it is not long before I find that <a href="https://www.mkdocs.org">MkDocs</a> has similar functionalities but with more simpler md syntax and easier configuration. There is a more detailed article <a href="https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/">StructuredText vs. Markdown for technical documentation</a> and <a href="https://www.readinghere.com/blog/restructuredtext-vs-markdown/">reStructuredText 和 Markdown 该选谁？</a>. In the following sections, I will share the most useful tips and workflows I have used so far. </p>
+<h3 id="markdown-vs-restructuredtext">Markdown vs reStructuredTExt</h3>
+<p>Markdown syntax is simple and widely used. By comparision,  reStructuredTExt (rst) is more powerful and uniformed. Sadly, these two are not fully compatible. By now, as I am more familar and comforable with md, so I decide to use it to document my contents.  But, considering of future demands,  one day I may need to use more advanced features of rst, so I would most likely to write md documents in way that can be easily handled or reused by rst processers. </p>
+<p>The list below shows some comparision between makrdown and reStructuredText</p>
+<ul>
+<li><a href="https://www.markdownguide.org/getting-started/">markdown guide</a></li>
+<li><a href="https://docutils.sourceforge.io/rst.html">reStructuredText</a></li>
+<li><a href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">reStructuredText syntax reference </a></li>
+<li><a href="https://gist.github.com/dupuy/1855764">Markdown and reStructuredText</a></li>
+<li><a href="https://docs.acumos.org/en/elpis/docs-contributor-guide/rst-dev-tools.html">tools for creating documentataion in reStructuredText</a></li>
+</ul>
+<h3 id="markdown">Markdown</h3>
+<h4 id="publish-md-documents-on-github-repository-using-mkdocs">Publish md documents on Github repository using MkDocs</h4>
+<p>With MkDocs, all the md documents can be viewed locally on your browser. More attractively, they can be easily pushed to your Github repository and to be viewly publicly on a website as manuals or blogs too. Actually all the contents of this website are initially witten in md, and then converted to HTML by MkDocs. How handy and fantastic it is!</p>
+<p>To fully benefit from this feature,  firstly create a repositrory on your github account and clone it into your local computer. Starting from the local folder magic can happen soon, and you just execute the following commands or follow the instructions from <a href="https://www.mkdocs.org/getting-started/">mkdocs.org</a>:</p>
+<pre><code>* `mkdocs new .` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server, and view it at http://127.0.0.1:8000/ in your browser
+* `mkdocs build` - Build the documentation site.
+* `mkdocs gh-deploy` - upload your local documents to your remote repository on github and publish there. 
+</code></pre>
+<p>As one of the drawbacks of md documents compared with reStructureText, the way to generate a table of content (TOC) is not uniformly specified in the syntax, so it is often problematic when you switch between md processing applications. Currently, mkdocs provides two different themes (i.e. ReadTheDocs and mkdocs), so that you can to arrange your pages in two distinct ways.</p>
+<h5 id="configure-table-of-contents-in-readthedocs-theme">configure table of contents in readthedocs theme</h5>
+<p>Readthedocs theme, as the name implies, is designed for holding documents, therefore it can handle the structures of long and extensive documentions very well. To get a nice outline of your documents, by default, it will rely on the local folder and file structure. If you want to show the fiels in a differnt way, just add your customized TOC structure in the mkdocs.yml file.  </p>
+<h5 id="configure-table-of-contents-in-mkdocs-theme">configure table of contents in mkdocs theme</h5>
+<p>If you choose to use the mkdocs template,  it will generate the navigation setions shown on top of your website home page using your local file hierarchy by default. This feature is nice and clear only if you have very limited amount of subsections, but it would be less informative if you have many different pages or sections to show. Likewisely, there is also a way to customize your website/file structure by <a href="https://www.mkdocs.org/user-guide/writing-your-docs/">edit the yml configuration file</a>.</p>
+<p>In summary, MkDocs is a very convenienvet tool to deploy a simple website. It incorporates two useful themes to host either a documenation website or functional website. Nonetheless, if there is no automatic way to generate TOC, and it would be difficult to set up the hierarchial structure when you have a lot of md files. </p>
+<h4 id="local-documentation-with-obsidian">Local documentation with Obsidian</h4>
+<p>When work on md files localy, I use Obsidian to process and manage them. TOC has a direc reflect of your directory struture within one vault, which is a term/method used by Obsidian to curate an independent and standalone repository. This feature is pretty neat enough if you learn to use folder structure and naming appropriately. </p>
+<p>Two usefule tips:</p>
+<pre><code>- [[]] # internal link
+- #tools #  the tag
+</code></pre>
+<p>To learn more instructions on how to use obsidian, check out at <a href="https://www.youtube.com/watch?v=Ewhfok91AdE">obsidian workflow</a> . </p>
+<h4 id="publish-md-documents-on-github-repository-using-jekyll">Publish md documents on Github repository using Jekyll</h4>
+<p><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll">Github Docs</a></p>
+<h3 id="restructuredtext">reStructuredTExt</h3>
+<h4 id="publish-restructuredtext-on-github-repository-with-sphinx">Publish reStructuredText on Github repository with Sphinx</h4>
+<p>TODOs: 
+ - add more instructions on how to use <a href="https://www.sphinx-doc.org/en/master/index.html">sphinx</a>.
+ - local editing of rst files.
+ - publish on github. read the docs</p>
+<p>after running the command below:</p>
+<pre><code>$ sphinx-quickstart
+</code></pre>
+<p>You can use <a href="https://myst-parser.readthedocs.io/en/latest/using/intro.html">Markdown using MyST</a> and reStructuredText in the same Sphinx project. We support this natively on Read the Docs, and you can do it locally:
+<code>pip install myst-parser</code></p>
+<p>Then in your <code>conf.py</code>:</p>
+<p><code>extensions = ['myst_parser']</code></p>
+<h5 id="host-on-github-pages">host on github pages</h5>
+<h5 id="host-on-readthedocs">host on readthedocs</h5>
+<h2 id="workflow-to-update-and-publish-docs">Workflow to update and publish docs</h2>
+<p>TODOs: add more instructions on how the workflow is like. </p>
+<ul>
+<li><a href="https://docs.readthedocs.io/en/stable/index.html">Read the Docs tutorial</a></li>
+<li><a href="https://readthedocs.org/">Read the Docs</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Setup%20github%20workflow/" class="btn btn-neutral float-right" title="Setup github workflow">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Add%20aliases%20to%20note/" class="btn btn-neutral" title="Add aliases to note"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Add%20aliases%20to%20note/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Setup%20github%20workflow/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
