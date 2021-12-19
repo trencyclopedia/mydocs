@@ -1,0 +1,36 @@
+site_name: My Docs
+theme: readthedocs
+
+theme:
+    name: readthedocs  # mkdocs
+    nav_style: primary # ligth, dark
+    navigation_depth: 4     
+            
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+        
+    analytics: 
+        gtag: G-ABC123
+    locale: zh_CN #en
+
+        
+        
+        
+## the navigation structure when use mkdocs theme
+# nav:
+    # - Home: 'index.md'
+    # - 'English Blogs': 
+        # - How to:
+            # - 'Setup documentation Workflow': 'Setup documentation Workflow.md'
+            # - 'setup github workflow': 'English Blogs/How to/Setup github workflow.md'  
+        # - Tech:
+            # - 'Digital healthcare': 'English Blogs/How to/Setup documentation Workflow.md'
+            # - 'Quantified-self': 'English Blogs/Tech/Setup github workflow.md'           
+    # - 中文笔记:
+        # - 写作：
+            # - 写作分享：'中文笔记/写作/写作分享——开篇语.md‘
+            # - 自我驱动力从哪来：'中文笔记/写作/自我驱动力从哪来？.md‘
+        # - 'License': 'license.md'
+        # - 'Release Notes': 'release-notes.md'
