@@ -65,7 +65,7 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Setup documentation Workflow</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#markdown-documentation-publish-tools-workflows">Markdown documentation, publish tools &amp; workflows</a>
+    <li class="toctree-l3"><a class="reference internal" href="#documentation-syntax-tools-workflows">Documentation syntax, tools &amp; workflows</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#markdown-vs-restructuredtext">Markdown vs reStructuredTExt</a>
     </li>
@@ -79,7 +79,7 @@
     </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Setup%20github%20workflow/">Setup github workflow</a>
+                <li class="toctree-l2"><a class="reference internal" href="../Setup%20github%20workflow/">Git</a>
                 </li>
     </ul>
                     </li>
@@ -98,7 +98,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="#">写作</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/">中文笔记</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C%E5%88%86%E4%BA%AB%E2%80%94%E2%80%94%E5%BC%80%E7%AF%87%E8%AF%AD/">写作分享——开篇语</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E8%87%AA%E6%88%91%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5/">自我驱动力从哪里来</a>
                 </li>
     </ul>
                     </li>
@@ -144,7 +146,7 @@
             <div class="section">
               
                 <h1 id="setup-documentation-workflow">Setup documentation Workflow</h1>
-<h2 id="markdown-documentation-publish-tools-workflows">Markdown documentation, publish tools &amp; workflows</h2>
+<h2 id="documentation-syntax-tools-workflows">Documentation syntax, tools &amp; workflows</h2>
 <hr />
 <p>14:10 Monday, December 13, 2021</p>
 <p>I have been searching a lightweith, scablable and easy-to-use documentation method for around half a year since I finished my 150+ page-dissertation and wrote many other personal notes using Microsft Word. Previously, I searched and tried a few notetaking tools such as Roam, WorkFlowy, Evernote which didn't work out quite well for me. In fact, I sticked with Word and picked up OneNote, Notion, TheBrain to write notes, organize personal plans and projects. These tools works quite well for me at the beginning, but after I accumulated more data and records (e.g. seveal documents with 1000+ pages), Word and Notion begin to struggle with performance and scability issues. Additionally, word files and formats usually can't be coverted into html files in a straitforwad way, so another headache creeps in when I think about disseminating part of these written materials in my personal website on-line. I relize it is time to find an alternative. </p>
@@ -198,7 +200,10 @@
 <p>Then in your <code>conf.py</code>:</p>
 <p><code>extensions = ['myst_parser']</code></p>
 <h5 id="host-on-github-pages">host on github pages</h5>
+<p>To deploy the contents on Github pages, we just simply need to upload the local directories of build html fiels to the gh-pages branch. If you use mkdocs. The same function is implemented when you execute the mkdocs gh-page command, which actually employs another command called <a href="https://github.com/c-w/ghp-import">ghp-import</a>under the hook. But here, you can use the command , </p>
+<p><code>git push origin gh-page</code></p>
 <h5 id="host-on-readthedocs">host on readthedocs</h5>
+<h6 id="tiel-six">tiel six</h6>
 <h2 id="workflow-to-update-and-publish-docs">Workflow to update and publish docs</h2>
 <p>TODOs: add more instructions on how the workflow is like. </p>
 <ul>
@@ -212,7 +217,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Setup%20github%20workflow/" class="btn btn-neutral float-right" title="Setup github workflow">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Setup%20github%20workflow/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../Add%20aliases%20to%20note/" class="btn btn-neutral" title="Add aliases to note"><span class="icon icon-circle-arrow-left"></span> Previous</a>

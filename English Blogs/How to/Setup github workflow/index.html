@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Setup github workflow - My Docs</title>
+  <title>Git - My Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup github workflow";
+    var mkdocs_page_name = "Git";
     var mkdocs_page_input_path = "English Blogs\\How to\\Setup github workflow.md";
     var mkdocs_page_url = null;
   </script>
@@ -65,8 +65,16 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../Setup%20documentation%20workflow/">Setup documentation Workflow</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Setup github workflow</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Git</a>
     <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#about-version-control">About version control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-git">What is Git?</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#snapshots-not-differences">Snapshots, Not Differences</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -86,7 +94,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="#">写作</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C/">中文笔记</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C%E5%88%86%E4%BA%AB%E2%80%94%E2%80%94%E5%BC%80%E7%AF%87%E8%AF%AD/">写作分享——开篇语</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0/%E5%86%99%E4%BD%9C/%E8%87%AA%E6%88%91%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5/">自我驱动力从哪里来</a>
                 </li>
     </ul>
                     </li>
@@ -120,7 +130,7 @@
         
       
     
-    <li>Setup github workflow</li>
+    <li>Git</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -131,7 +141,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1"></h1>
+                <h1 id="git">Git</h1>
+<h3 id="about-version-control">About version control</h3>
+<p>Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
+<ul>
+<li>Strong support for non-linear development (thousands of parallel branches)  </li>
+<li>Fully distributed</li>
+<li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+</ul>
+<p>Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities. It’s amazingly fast, it’s very efficient with large projects, and it has an incredible branching system for non-linear development (See <a href="https://git-scm.com/book/en/v2/ch00/ch03-git-branching">Git Branching</a>).</p>
+<h2 id="what-is-git">What is Git?</h2>
+<p>So, what is Git in a nutshell? This is an important section to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you.</p>
+<h3 id="snapshots-not-differences">Snapshots, Not Differences</h3>
+<p>The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as <em>delta-based</em> version control).</p>
               
             </div>
           </div>
